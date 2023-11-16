@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <title>Always Sunny Weather App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
       body {
           font-family: Arial, sans-serif;
@@ -91,12 +93,43 @@
           margin-top: 15px;
       }
 
+      .download img {
+          max-width: 200px;
+          margin: 20px 0;
+      }
+
       footer {
           padding: 20px;
           margin-top: 20px;
           color: #ffffff;
           background-color: #ffeb0a;
           text-align: center;
+      }
+
+      @media screen and (max-width: 768px) {
+          .container {
+              width: 95%;
+          }
+
+          header nav {
+              float: none;
+              text-align: center;
+          }
+
+          header li {
+              float: none;
+              text-align: center;
+              margin-top: 10vh;
+          }
+
+          header li {
+              padding: 5px 1vw;
+          }
+
+          .app-info img {
+              max-width: 100%;
+          }
+
       }
   </style>
 </head>
@@ -131,7 +164,7 @@
     <p>The Always Sunny Weather ☀️ App provides mostly inaccurate, semi-real-time, sunny
       weather forecasts. It's easy to use and helps you boost your day and the amount of
       sun you see.</p>
-    <img src="always-sunny.png" alt="Always Sunny Weather App Interface">
+    <img src="always-sunny-phone.png" alt="Always Sunny Weather App Interface">
   </div>
 </section>
 
